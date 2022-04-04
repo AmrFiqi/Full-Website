@@ -28,11 +28,12 @@ a{
     outline: none;
     text-decoration: none;
     color:#B0B0B0;
+    font-size: xx-large;
 }
 nav{
     display: inline-block;
     width: 30%;
-    font-size: large;
+    font-size: xx-large;
     margin-left: 60%;
 }
 nav li{
