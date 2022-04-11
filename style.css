@@ -123,13 +123,12 @@ section{
 .social{
     position: relative;
     display: inline-block;
-    width: 100%;
+    width: 90%;
     background-color: white;
     height: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 10%;
-    padding-right: 5%;
     border-bottom: #B0B0B0 solid;
 }
 .words{
@@ -141,6 +140,7 @@ section{
     width: 70%;
     display: inline-block;
     bottom: 25%;
+    margin-left: 7%;
     
 }
 .social a{
@@ -161,7 +161,8 @@ section{
 /*---------------- Details ----------------*/
 
 .details{
-    padding-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     width: 100%;
     height: 100%;
     display: relative;
@@ -172,21 +173,22 @@ section{
 .tabs{
     display: inline-block;
     width: 30%;
-    height: 100%;
+    
 }
 .data{
+    
     width: 30%;
     display: inline-block;
     display: none;
+    
 }
 .details-img{
     display: inline-block;
-    width: 40%;
+    padding-left: 10%;
+    width: 10%;
     background-repeat: no-repeat;
-    float: right;
+    
 }
-
-
 .tabs_button{
     display: block;
     margin-bottom: 0.2%;
@@ -199,16 +201,9 @@ section{
     color: white;
 }
 .tabs_button-active{
-    display: inline-block;
-    margin-bottom: 0.2%;
-    margin-left: 35%;
-    padding:8% 5%;
-    border-radius: 2%;
-    font-size: x-large;
-    border-style: none;
-    background-color: #FF8B38;
-    color: white;
+    background-color: #FF8B38;  
 }
 .data-active{
-    display: block;
+    display: inline-block;
+    
 }
