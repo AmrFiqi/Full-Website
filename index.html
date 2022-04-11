@@ -84,16 +84,22 @@
             <button class="tabs_button" data-for-tab="3">TAB 3</button>
         </div>
         <div class="data data-active" data-tab="1">
-            <h2>Tabs with soft transitioning effect</h2>
+            <h2 style="padding-bottom: 10%;">Tab 1</h2>
+            <br>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</p>
+            <button style="color: white; background-color: #FF8B38; border-radius: 5%; border-style: none; padding:3% 4%; margin-top: 10%;">Download</button>
         </div>
         <div class="data" data-tab="2">
-            <h2>Tabs with soft transitioning effect</h2>
+            <h2 style="padding-bottom: 10%;">Tab 2</h2>
+            <br>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</p>
+            <button style="color: white; background-color: #FF8B38; border-radius: 5%; border-style: none; padding:3% 4%; margin-top: 10%;">Download</button>
         </div>
         <div class="data" data-tab="3">
-            <h2>Tabs with soft transitioning effect</h2>
+            <h2 style="padding-bottom: 10%;">Tab 3</h2>
+            <br>
             <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.</p>
+            <button style="color: white; background-color: #FF8B38; border-radius: 5%; border-style: none; padding:3% 4%; margin-top: 10%;">Download</button>
         </div>
         <div class="details-img">
             <img src="images/cty.png" alt="city">
@@ -106,18 +112,36 @@
 
 
 
-
-
-
-
-
-
-
-
-
     <!--------------- Scripts -------------------->
-    <script src="https://kit.fontawesome.com/be2f5cb30b.js" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/be2f5cb30b.js" crossorigin="anonymous"></script>
+    <script>
+    function tabs(){
+         document.querySelectorAll(".tabs_button").forEach(button => {
+             button.addEventListener("click",()=>{
+                const sideTabs= button.parentElement;
+                const tabData = sideTabs.parentElement;
+                const tabNum= button.dataset.forTab;
+                const active= tabData.querySelector(`.data[data-tab='${tabNum}']`);
+                console.log(sideTabs);
+                console.log(tabData);
+                console.log(tabNum);    
+                console.log(active);
+
+                sideTabs.querySelectorAll(".tabs_button").forEach(button =>{
+                    button.classList.remove("tabs_button-active");
+                });
+                tabData.querySelectorAll(".data").forEach(tab =>{
+                    tab.classList.remove("data-active");
+                });
+                button.classList.add("tabs_button-active");
+                active.classList.add("data-active");
+             });
+         });
+     }
      
+    document.addEventListener("DOMContentLoaded",()=>{
+         tabs();
+     });
     </script>
 </body>
 </html>
