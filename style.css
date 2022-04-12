@@ -172,21 +172,18 @@ section{
 }
 .tabs{
     display: inline-block;
-    width: 30%;
-    
+    width: 30%;  
 }
 .data{
     width: 30%;
     display: inline-block;
-    display: none;
-    
+    display: none;   
 }
 .details-img{
     display: inline-block;
     padding-left: 10%;
     width: 10%;
-    background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;   
 }
 .tabs_button{
     display: block;
@@ -203,6 +200,16 @@ section{
     background-color: #FF8B38;  
 }
 .data-active{
-    display: inline-block;
+    display: inline-block;   
+}
+
+/*---------------- Sub List ----------------*/
+.sub_list{
     
+}
+.left_img{
+
+}
+.right_text{
+
 }
