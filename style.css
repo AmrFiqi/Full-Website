@@ -205,11 +205,58 @@ section{
 
 /*---------------- Sub List ----------------*/
 .sub_list{
-    
+    display: inline-block;
+    position: relative;
+    color: #888888;
 }
 .left_img{
-
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 15%;
+    padding-right: 5%;
+    display: inline-block;
+    width: 40%;
 }
 .right_text{
-
+    display: inline-block;
+    width: 30%;
+    
 }
+.right_text h4{
+    margin-left: 10%;
+    color: rgb(126, 125, 125);
+    margin-bottom: 3%;
+   
+}
+#up_icon{
+    overflow: auto;
+  }
+  #up_icon::before {
+    font-family: "Font Awesome 5 Free"; 
+	font-weight: 900;
+	content: "\f0ee";
+    float: left;
+    font-size: x-large;
+    color: #FF8B38;
+    margin-right: 5%;
+}
+#up_icon>span {
+    display: block;
+    overflow: auto;
+  }
+#down_icon{
+    overflow: auto;
+  }
+#down_icon::before {
+    font-family: "Font Awesome 5 Free"; 
+	font-weight: 900;
+	content: "\f0ed";
+    float: left;
+    font-size: x-large;
+    color: #FF8B38;
+    margin-right: 5%;
+}
+#down_icon>span {
+    display: block;
+    overflow: auto;
+  }
