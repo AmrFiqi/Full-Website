@@ -212,7 +212,7 @@ section{
 .left_img{
     padding-top: 5%;
     padding-bottom: 5%;
-    padding-left: 15%;
+    padding-left: 10%;
     padding-right: 5%;
     display: inline-block;
     width: 40%;
@@ -260,3 +260,30 @@ section{
     display: block;
     overflow: auto;
   }
+
+/*--------------------- Standard Picture Section --------------------*/
+
+.standard{
+    background-color: #F5F5F5;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.st_text{
+    display: inline-block;
+    width: 35%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+.st_text p{
+    color: #888888;
+}
+.st_pic{
+    vertical-align:top;
+    margin-left: 5%;
+    display: inline-block;
+    width: 30%;
+}
