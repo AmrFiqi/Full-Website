@@ -230,7 +230,7 @@ section{
 }
 #up_icon{
     overflow: auto;
-  }
+}
   #up_icon::before {
     font-family: "Font Awesome 5 Free"; 
 	font-weight: 900;
@@ -243,10 +243,10 @@ section{
 #up_icon>span {
     display: block;
     overflow: auto;
-  }
+}
 #down_icon{
     overflow: auto;
-  }
+}
 #down_icon::before {
     font-family: "Font Awesome 5 Free"; 
 	font-weight: 900;
@@ -259,7 +259,7 @@ section{
 #down_icon>span {
     display: block;
     overflow: auto;
-  }
+}
 
 /*--------------------- Standard Picture Section --------------------*/
 
@@ -286,4 +286,58 @@ section{
     margin-left: 5%;
     display: inline-block;
     width: 30%;
+}
+
+/*-------------------- More Features ----------------------*/
+
+.reason{
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.r_text{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.r_img{
+    display: inline-block;
+    position: relative;
+    margin-left: 10%;
+}
+.r_img i{
+    color: #FF8B38;
+    font-weight: lighter;
+    font-size: 50px;
+    margin-bottom: 4%;
+    text-align: center;
+    
+}
+.r_img h5{
+    margin-bottom: 4%;
+    font-weight: lighter;
+    font-size: x-large;
+    text-align: center;
+}
+.r_img p{
+    color: #5a5a5a;
+}
+#feature1{
+    display: inline-block;
+    width: 25%;
+    margin-right: 5%;
+    text-align: center;
+    
+}
+#feature2{
+    display: inline-block;
+    width: 25%;
+    margin-right: 5%;
+    text-align: center;
+}
+#feature3{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    
 }
