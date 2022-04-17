@@ -409,7 +409,7 @@ section{
 #animate1{
     background-color: #FF8B38;  color: #FFF1CA;
     font-size: 0px;
-    padding:0.5% 0%;
+    padding:0.8% 0%;
     transition:.6s ease;
 }
 #animate1:hover{
@@ -420,7 +420,7 @@ section{
 #animate2{
     background-color: #FF8B38;  color: #FFF1CA;
     font-size: 0px;
-    padding:0.5% 0%;
+    padding:0.8% 0%;
     transition:.6s ease;
 }
 #animate2:hover{
@@ -431,7 +431,7 @@ section{
 #animate3{
     background-color: #FF8B38;  color: #FFF1CA;
     font-size: 0px;
-    padding:0.5% 0%;
+    padding:0.8% 0%;
     transition:.6s ease;
 }
 #animate3:hover{
@@ -547,4 +547,56 @@ section{
     color: white;
     background-color: Transparent;
     background-repeat: no-repeat;
+}
+
+/*---------------------- Contact US -------------------------*/
+
+.contact{
+    padding:5% 10%;
+}
+.contact_text{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.contact_form{
+    display: inline-block;
+    
+}
+.user_detail{
+    display: inline-block;
+    width: 40%;
+    border:none;
+    margin-right: 10%;
+}
+.user_detail input{
+    width: 100%;
+    border:0;
+    margin:7% 5%;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    padding:2% 4%;  
+    width: 100%;
+}
+.user_message{
+    display: inline-block;
+    width: 45%;
+}
+.user_message input{
+    width: 100%;
+    border:0;
+    margin:7% 5%;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    padding:2% 4%;  
+}
+.p_hold::placeholder{
+    color: rgb(146, 146, 146);
+}
+#send_btn{
+    border: none;
+    margin-left: 45%;
+    
+    color:white;
+    padding: 0.7% 1.5%;
+    border-radius: 3%;
+    background-color: #FF9B51;
 }
