@@ -3,6 +3,7 @@
     padding: 0;
     font-family: sans-serif;
     scroll-behavior: smooth;
+    
 }
 
 /*--------------- Header ---------------*/
@@ -138,7 +139,7 @@ section{
 .social{
     position: relative;
     display: inline-block;
-    width: 90%;
+    width: 100%;
     background-color: white;
     height: 5%;
     padding-top: 2%;
@@ -146,27 +147,24 @@ section{
     padding-left: 10%;
     border-bottom: #B0B0B0 solid;
 }
-.words{
+.word{
     width: 30%;
     display: inline-block;
 }
 .icons {
-    position: absolute;
-    width: 70%;
+    width: 60%;
     display: inline-block;
-    bottom: 25%;
-    margin-left: 7%;
     
 }
 .social a{
-    float: right;
+    display: inline-block;
     font-size: 500%;
-    padding-left: 5%;
+    padding-left: 10%;
     
 }
 .social p{
     font-size: 20px;
-    width: 30%;
+    
 }
 .social h3{
     font-size: 30px;
@@ -636,7 +634,7 @@ section{
 
 
 /*----------------------- Responsivenes --------------------------*/
-@media  (max-width: 450px){
+@media  (max-width: 550px){
     /*-------------Header------------*/
     header{display: block;
         padding:10% 0%;
@@ -646,6 +644,7 @@ section{
         display: block;
         text-align: center;
         margin-right: 5%;
+        font-size: 100px;
     }
     nav{
         margin-top: 5%;
@@ -654,20 +653,6 @@ section{
         text-align: center;
         
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /*-----------Features------------_*/
     #feautres{
         display: block;
@@ -729,6 +714,32 @@ section{
         text-align: center;
         margin-left: 35%;
     }
-    
+    /*------------- Social -------------*/
+    .social{
+        display: block;
+        width: 100%;
+        margin: 0% 2%;
+        padding: 5% 0%;
+    }
+    .social p{
+        text-align: center;
+        margin: 0%;
+        font-size: medium;
+        width: 100%;
+    }
+    .word{
+        display: block;
+        font-size: medium;
+        text-align: center;
+        width: 90%;
+    }
+
+    .icons{
+        margin-top: 3%;
+        display: block; 
+        font-size: 8px;
+        width: 90%;
+    }
+    .
 }
 
